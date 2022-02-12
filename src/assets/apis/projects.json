@@ -1,0 +1,26 @@
+[
+    {
+        "title": "To do list",
+        "description": "Aplicación web para aquellas personas que le guste organizarse y cumplir todo lo que se proponga. ",
+        "img": "/static/media/to-do-list.webp",
+        "url__github": "https://github.com/jesusmarzor/to-do-list",
+        "url__demo": "https://to-do-list.jesusmarzor.com",
+        "color": "#2a94f2"
+    },
+    {
+        "title": "Haley Dust",
+        "description": "Maquetada con HTML y SASS. Tambien he implementado BEM, una metodología de desarrollo basada en componentes.",
+        "img": "/static/media/haley-dust.webp",
+        "url__github": "https://github.com/jesusmarzor/Haley-Dust",
+        "url__demo": "https://jesusmarzor.github.io/Haley-Dust/",
+        "color": "#feb633"
+    },
+    {
+        "title": "Armazon",
+        "description": "Maquetada con HTML y CSS. La página no tiene funcionalidad, está hecha a partir de una imagen.",
+        "img": "/static/media/armazon.webp",
+        "url__github": "https://github.com/jesusmarzor/Armazon",
+        "url__demo": "https://jesusmarzor.com/Armazon/",
+        "color": "#0e7e93"
+    }
+]

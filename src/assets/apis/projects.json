@@ -20,7 +20,7 @@
         "description": "Maquetada con HTML y CSS. La página no tiene funcionalidad, está hecha a partir de una imagen.",
         "img": "/static/media/armazon.webp",
         "url__github": "https://github.com/jesusmarzor/Armazon",
-        "url__demo": "https://jesusmarzor.com/Armazon/",
+        "url__demo": "https://jesusmarzor.github.io/Armazon/",
         "color": "#0e7e93"
     }
 ]

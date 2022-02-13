@@ -1,5 +1,5 @@
 import React from "react";
-import link from "assets/img/error404.png";
+import link from "assets/img/error404.webp";
 import "./styles.scss";
 export function Error404(){
   return (

@@ -16,11 +16,10 @@
         "color": "#feb633"
     },
     {
-        "title": "Armazon",
-        "description": "Maquetada con HTML y CSS. La página no tiene funcionalidad, está hecha a partir de una imagen.",
-        "img": "/static/media/armazon.webp",
-        "url__github": "https://github.com/jesusmarzor/Armazon",
-        "url__demo": "https://jesusmarzor.github.io/Armazon/",
-        "color": "#0e7e93"
+        "title": "Wallet",
+        "description": "Proyecto desarrollado en React(frontend) y Laravel(backend). Maquetado en SASS y usando metodología BEM.",
+        "img": "/static/media/wallet.webp",
+        "url__github": "https://github.com/jesusmarzor/Wallet",
+        "url__demo": "https://wallet-jesusmarzor.herokuapp.com/"
     }
 ]

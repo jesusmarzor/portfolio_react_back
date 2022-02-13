@@ -22,7 +22,7 @@
     margin: $margin;
 }
 @mixin button($color-letter, $color-background, $color-border){
-    min-width: 4rem;
+    min-width: 4.5rem;
     color: $color-letter;
     background-color: $color-background;
     border: 1px solid $color-border;

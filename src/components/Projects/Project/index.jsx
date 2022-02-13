@@ -1,12 +1,12 @@
 import React from "react";
-import armazon from "assets/img/armazon.webp";
 import toDoList from "assets/img/to-do-list.webp";
 import haleyDust from "assets/img/haley-dust.webp";
+import wallet from "assets/img/wallet.webp";
 import Button from "components/Features/Button";
 import "./styles.scss";
 
 function Project({project}){
-    const img = (project.title === "To do list") ? toDoList : (project.title === "Haley Dust") ? haleyDust : armazon;
+    const img = (project.title === "To do list") ? toDoList : (project.title === "Haley Dust") ? haleyDust : wallet;
     return(
         <div className="project">
             <img className="project__img" src={img} alt={project.title} loading="lazy" width="352" />

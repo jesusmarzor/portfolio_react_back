@@ -50,7 +50,7 @@ body{
         }
         .project{
             background-color: $white-black;
-            box-shadow: -.2rem .2rem 0rem 0.1rem $off_white;
+            box-shadow: 0 0 .2rem $off_white;
             &__title{
                 color: white;
             }

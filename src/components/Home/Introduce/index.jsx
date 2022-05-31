@@ -1,4 +1,4 @@
-import Button from "components/Features/Button";
+import Button from "components/ui/Button";
 import React from "react";
 import "./styles.scss";
 

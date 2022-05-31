@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-scroll";
-import { Spinner } from "components/Features/Spinner";
+import { Spinner } from "components/ui/Spinner";
 import "./styles.scss";
 
 function Button({label, to, inverse = false, download, disabled=false, children}){

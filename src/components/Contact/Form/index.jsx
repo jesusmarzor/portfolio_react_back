@@ -1,5 +1,5 @@
 import React from "react";
-import Button from "components/Features/Button";
+import Button from "components/ui/Button";
 import Input from "components/Contact/Form/Input";
 import Message from "components/Contact/Form/Message";
 import useFormspree from "hooks/useFormspree";

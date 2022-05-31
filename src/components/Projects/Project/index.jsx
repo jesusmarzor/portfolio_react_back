@@ -2,7 +2,7 @@ import React from "react";
 import toDoList from "assets/img/to-do-list.webp";
 import haleyDust from "assets/img/haley-dust.webp";
 import wallet from "assets/img/wallet.webp";
-import Button from "components/Features/Button";
+import Button from "components/ui/Button";
 import "./styles.scss";
 
 function Project({project}){

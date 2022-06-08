@@ -80,3 +80,11 @@ export const SOCIAL_NETWORKS = [
         
     }
 ]
+
+export const BUTTON_TYPES = {
+    A: "a",
+    DOWNLOAD: "download",
+    LINK: "link",
+    INPUT: "input",
+    LOADING: "loading"
+}

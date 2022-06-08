@@ -29,8 +29,8 @@
     "error_message": "Introduce your message",
     "send": "Send",
     "loading": "Loading",
-    "success_sent": "!Message sent succesfully!",
-    "error_sent": "!Error while sending message!",
+    "success_sent": "Message sent succesfully!",
+    "error_sent": "Error while sending message!",
 
     "footer": "Page programmed by Jesús Martín",
 

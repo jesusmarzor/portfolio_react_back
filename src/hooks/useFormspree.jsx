@@ -14,17 +14,17 @@ export default function useFormspree(){
     const [state, handleSubmit] = useForm(process.env.REACT_APP_ID_FORM);
     const [response, setResponse] = useState(null);
     useEffect( () => {
-            if(mounted.current === false){
-                mounted.current = true;
-            }else{
-                setLoading(state.submitting);
-                if(state.submitting === false){
-                    setResponse(state.succeeded);
-                    setTimeout(()=>{
-                        setResponse(null);
-                    },5000);
-                }
+        if(mounted.current === false){
+            mounted.current = true;
+        }else{
+            setLoading(state.submitting);
+            if(state.submitting === false){
+                setResponse(state.succeeded);
+                setTimeout(()=>{
+                    setResponse(null);
+                },5000);
             }
+        }
     },[state.submitting, state.succeeded]);
 
     const sendMail = useCallback((e) => {

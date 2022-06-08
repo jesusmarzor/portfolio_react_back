@@ -4,6 +4,7 @@ import haleyDust from "assets/img/haley-dust.webp";
 import wallet from "assets/img/wallet.webp";
 import Button from "components/ui/Button";
 import { useTranslation } from "react-i18next";
+import { BUTTON_TYPES } from "utils/Constans";
 
 import "./styles.scss";
 
@@ -18,8 +19,8 @@ function Project({project}){
                 <p className="project__p">{project.description}</p>
             </div>
             <div className="project__buttons">
-                <Button label="a" to={project.url__github}>{t('code')}</Button>
-                <Button label="a" to={project.url__demo} inverse={true}>{t('page')}</Button>
+                <Button label={BUTTON_TYPES.A} to={project.url__github}>{t('code')}</Button>
+                <Button label={BUTTON_TYPES.A} to={project.url__demo} inverse={true}>{t('page')}</Button>
             </div>
         </div>
     )

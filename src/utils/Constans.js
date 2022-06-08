@@ -1,4 +1,66 @@
-[
+export const LANGUAGES = {
+    ES: 'es',
+    EN: 'en'
+}
+export const FORM = {
+    NAME: 'name',
+    EMAIL: 'email',
+    MESSAGE: 'message'
+}
+
+export const PROJECTS_ES = [
+    {
+        "title": "To do list",
+        "description": "Aplicación web para aquellas personas que le guste organizarse y cumplir todo lo que se proponga. ",
+        "img": "/static/media/to-do-list.webp",
+        "url__github": "https://github.com/jesusmarzor/to-do-list",
+        "url__demo": "https://to-do-list.jesusmarzor.com",
+        "color": "#2a94f2"
+    },
+    {
+        "title": "Haley Dust",
+        "description": "Maquetada con HTML y SASS. Tambien he implementado BEM, una metodología de desarrollo basada en componentes.",
+        "img": "/static/media/haley-dust.webp",
+        "url__github": "https://github.com/jesusmarzor/Haley-Dust",
+        "url__demo": "https://jesusmarzor.github.io/Haley-Dust/",
+        "color": "#feb633"
+    },
+    {
+        "title": "Wallet",
+        "description": "Proyecto desarrollado en React(front-end) y Laravel(back-end). Maquetado en SASS y usando metodología BEM.",
+        "img": "/static/media/wallet.webp",
+        "url__github": "https://github.com/jesusmarzor/Wallet",
+        "url__demo": "https://wallet-jesusmarzor.herokuapp.com/"
+    }
+]
+
+export const PROJECTS_EN = [
+    {
+        "title": "To do list",
+        "description": "Web application for those people that they like to organized and to achieve everything they propose. ",
+        "img": "/static/media/to-do-list.webp",
+        "url__github": "https://github.com/jesusmarzor/to-do-list",
+        "url__demo": "https://to-do-list.jesusmarzor.com",
+        "color": "#2a94f2"
+    },
+    {
+        "title": "Haley Dust",
+        "description": "Layout with HTML and SASS. Also, I've used BEM, it's a develop methodology for components.",
+        "img": "/static/media/haley-dust.webp",
+        "url__github": "https://github.com/jesusmarzor/Haley-Dust",
+        "url__demo": "https://jesusmarzor.github.io/Haley-Dust/",
+        "color": "#feb633"
+    },
+    {
+        "title": "Wallet",
+        "description": "Project programme with React(front-end) and Laravel(back-end). Layout with SASS and BEM methodology.",
+        "img": "/static/media/wallet.webp",
+        "url__github": "https://github.com/jesusmarzor/Wallet",
+        "url__demo": "https://wallet-jesusmarzor.herokuapp.com/"
+    }
+]
+
+export const SOCIAL_NETWORKS = [
     {
         "name": "instagram",
         "url": "https://www.instagram.com/jesusmarzor/",
@@ -18,3 +80,11 @@
         
     }
 ]
+
+export const BUTTON_TYPES = {
+    A: "a",
+    DOWNLOAD: "download",
+    LINK: "link",
+    INPUT: "input",
+    LOADING: "loading"
+}

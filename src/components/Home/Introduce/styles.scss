@@ -10,9 +10,6 @@
         font-weight: bold;
         color: $gray_dark;
         font-size: 3rem;
-        &::before{
-            content:"Soy "
-        }
     }
     &__p{
         font-weight: bold;
@@ -37,10 +34,8 @@
         margin-top: 2rem;
         margin-left: 0;
         text-align: center;
-        &__h1{
-            &::before{
-                content: "";
-            }
+        &__span{
+            display: none;
         }
         &__button{
             display: none;

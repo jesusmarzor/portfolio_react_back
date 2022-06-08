@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import { Error404 } from 'views/Error404';
 import { Portfolio } from 'views/Portfolio';
+import 'config/i18n';
 
 import './App.scss';
 

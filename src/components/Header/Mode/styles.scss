@@ -4,7 +4,7 @@
 
 .mode{
     position: absolute;
-    right: 0;
+    right: 3rem;
     width: 2rem;
     height: 2rem;
     @include flex(row,center,center,0);
@@ -33,7 +33,7 @@
 
 @media(max-width: 600px){
     .mode{
-        position: relative;
+        position: static;
         margin: auto;
         margin-top: 1rem;
     }

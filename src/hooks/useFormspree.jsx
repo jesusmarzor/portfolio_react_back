@@ -1,8 +1,10 @@
 import {useRef, useState, useEffect, useCallback} from "react";
 import validationForm from "components/Contact/Form/validateForm";
 import { useForm } from '@formspree/react';
+import { useTranslation } from "react-i18next";
 
 export default function useFormspree(){
+    const { t } =  useTranslation();
     const mounted = useRef(false);
     const [errors, setErrors] = useState({});
     const [name, setName] = useState("");
@@ -12,22 +14,22 @@ export default function useFormspree(){
     const [state, handleSubmit] = useForm(process.env.REACT_APP_ID_FORM);
     const [response, setResponse] = useState(null);
     useEffect( () => {
-            if(mounted.current === false){
-                mounted.current = true;
-            }else{
-                setLoading(state.submitting);
-                if(state.submitting === false){
-                    setResponse(state.succeeded);
-                    setTimeout(()=>{
-                        setResponse(null);
-                    },5000);
-                }
+        if(mounted.current === false){
+            mounted.current = true;
+        }else{
+            setLoading(state.submitting);
+            if(state.submitting === false){
+                setResponse(state.succeeded);
+                setTimeout(()=>{
+                    setResponse(null);
+                },5000);
             }
+        }
     },[state.submitting, state.succeeded]);
 
     const sendMail = useCallback((e) => {
         e.preventDefault();
-        if(validationForm(name,email,message,setErrors)){
+        if(validationForm(name,email,message,setErrors, t)){
             handleSubmit(e);
             e.target.reset();
             setName("");
@@ -35,7 +37,7 @@ export default function useFormspree(){
             setMessage("");
             setErrors({});
         }
-    },[name, email, message, handleSubmit]);
+    },[name, email, message, handleSubmit, t]);
     const changeData = useCallback(({e,setData}) => {
         setData(e.target.value);
     },[]);

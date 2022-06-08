@@ -1,8 +1,10 @@
 import {useRef, useState, useEffect, useCallback} from "react";
 import validationForm from "components/Contact/Form/validateForm";
 import { useForm } from '@formspree/react';
+import { useTranslation } from "react-i18next";
 
 export default function useFormspree(){
+    const { t } =  useTranslation();
     const mounted = useRef(false);
     const [errors, setErrors] = useState({});
     const [name, setName] = useState("");
@@ -27,7 +29,7 @@ export default function useFormspree(){
 
     const sendMail = useCallback((e) => {
         e.preventDefault();
-        if(validationForm(name,email,message,setErrors)){
+        if(validationForm(name,email,message,setErrors, t)){
             handleSubmit(e);
             e.target.reset();
             setName("");
@@ -35,7 +37,7 @@ export default function useFormspree(){
             setMessage("");
             setErrors({});
         }
-    },[name, email, message, handleSubmit]);
+    },[name, email, message, handleSubmit, t]);
     const changeData = useCallback(({e,setData}) => {
         setData(e.target.value);
     },[]);

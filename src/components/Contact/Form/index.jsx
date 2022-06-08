@@ -3,27 +3,30 @@ import Button from "components/ui/Button";
 import Input from "components/Contact/Form/Input";
 import Message from "components/Contact/Form/Message";
 import useFormspree from "hooks/useFormspree";
+import { useTranslation } from "react-i18next";
+import { FORM } from "utils/Constans";
+
 import "./styles.scss";
 
 export function Form(){
-
+    const { t } = useTranslation();
     const {setName, setEmail, setMessage, state, response, errors, sendMail, changeData, loading} = useFormspree();
     
     return(
         <form className="form" onSubmit={ sendMail }>
-            <Input label="Nombre" name="name" changeData={changeData} setData={setName} type="text" placeholder="Introduce tu nombre..." error={errors.name}/>
-            <Input label="Email" name="email" changeData={changeData} setData={setEmail} type="text" placeholder="Introduce tu email..." error={errors.email}/>
-            <Input label="Mensaje" name="message" changeData={changeData} setData={setMessage} type="message" placeholder="Introduce tu message..." error={errors.message}/>
-            <Button label="button" disabled={state.submitting}>{(loading) ? "Cargando" : "Enviar"}</Button>
+            <Input label={t('name')} name={FORM.NAME} changeData={changeData} setData={setName} type="text" placeholder={t('placeholder_name')} error={errors.name}/>
+            <Input label={t('email')} name={FORM.EMAIL} changeData={changeData} setData={setEmail} type="text" placeholder={t('placeholder_email')} error={errors.email}/>
+            <Input label={t('message')} name={FORM.MESSAGE} changeData={changeData} setData={setMessage} type="message" placeholder={t('placeholder_message')} error={errors.message}/>
+            <Button label="button" disabled={state.submitting}>{(loading) ? t('loading') : t('send')}</Button>
             <div className="form__response">
                 {
                     (response !== null)
                     ?
                         (response)
                         ?
-                            <Message result="success">!Mensaje enviado con éxito!</Message>
+                            <Message result="success"/>
                         :
-                            <Message result="error">!Error al enviar el mensaje!</Message> 
+                            <Message result="error"/> 
                     :
                         null
                 }

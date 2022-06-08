@@ -3,9 +3,12 @@ import toDoList from "assets/img/to-do-list.webp";
 import haleyDust from "assets/img/haley-dust.webp";
 import wallet from "assets/img/wallet.webp";
 import Button from "components/ui/Button";
+import { useTranslation } from "react-i18next";
+
 import "./styles.scss";
 
 function Project({project}){
+    const { t } = useTranslation();
     const img = (project.title === "To do list") ? toDoList : (project.title === "Haley Dust") ? haleyDust : wallet;
     return(
         <div className="project">
@@ -15,8 +18,8 @@ function Project({project}){
                 <p className="project__p">{project.description}</p>
             </div>
             <div className="project__buttons">
-                <Button label="a" to={project.url__github}>Ver código</Button>
-                <Button label="a" to={project.url__demo} inverse={true}>Ver página</Button>
+                <Button label="a" to={project.url__github}>{t('code')}</Button>
+                <Button label="a" to={project.url__demo} inverse={true}>{t('page')}</Button>
             </div>
         </div>
     )

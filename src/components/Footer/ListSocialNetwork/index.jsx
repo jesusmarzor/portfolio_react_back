@@ -1,6 +1,6 @@
 import React from "react";
-import { SocialNetwork } from "components/Footer/SocialNerwork";
-import socialNetworks from "assets/apis/socialNetworks.json";
+import { SOCIAL_NETWORKS } from "utils/Constans";
+import { SocialNetwork } from "../SocialNerwork";
 import "./styles.scss";
 
 export function ListSocialNetwork(){
@@ -9,7 +9,7 @@ export function ListSocialNetwork(){
             <ul className="listSocialNetwork">
                 <li className="listSocialNetwork__li">
                     {
-                        socialNetworks.map( socialNetwork => {
+                        SOCIAL_NETWORKS.map( socialNetwork => {
                             return <SocialNetwork key={socialNetwork.name} socialNetwork={socialNetwork}/>
                         })
                     }

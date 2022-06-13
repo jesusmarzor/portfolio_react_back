@@ -10,7 +10,7 @@ export function Home(){
             <div className="home__resize">
                 <Introduce/>
                 <div className="home__profile profile">
-                    <img className="profile__img" src={image} alt="fotografía" width="500"/>
+                    <img className="profile__img" src={image} alt="fotografía" width="520"/>
                 </div>
             </div>
         </Element>

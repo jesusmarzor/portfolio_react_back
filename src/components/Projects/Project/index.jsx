@@ -19,8 +19,8 @@ function Project({project}){
                 <p className="project__p">{project.description}</p>
             </div>
             <div className="project__buttons">
-                <Button label={BUTTON_TYPES.A} to={project.url__github}>{t('code')}</Button>
-                <Button label={BUTTON_TYPES.A} to={project.url__demo} inverse={true}>{t('page')}</Button>
+                <Button label={BUTTON_TYPES.A} to={project.links.github}>{t('code')}</Button>
+                <Button label={BUTTON_TYPES.A} to={project.links.demo} inverse={true}>{t('page')}</Button>
             </div>
         </div>
     )
